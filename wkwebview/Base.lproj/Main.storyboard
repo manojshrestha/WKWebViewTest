@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyw-a8-l18">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Web View Test View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wkwebview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WKWebViewTestViewController" id="BYZ-38-t0r" customClass="WKWebViewTestViewController" customModule="wkwebview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgI-Fr-en6">
-                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
+                                <rect key="frame" x="0.0" y="156.5" width="414" height="705.5"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-bx-TaT">
-                                <rect key="frame" x="10" y="54" width="334" height="34"/>
+                                <rect key="frame" x="10" y="58" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbN-bz-Mm1">
-                                <rect key="frame" x="354" y="55.5" width="50" height="31"/>
+                                <rect key="frame" x="354" y="58" width="50" height="34.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="gBG-Co-KC6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go"/>
                                 <connections>
-                                    <action selector="btnGoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14g-gb-L6P"/>
+                                    <action selector="btnGoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nba-gb-jzf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxG-T5-5uO">
-                                <rect key="frame" x="10" y="98" width="192" height="31"/>
+                                <rect key="frame" x="10" y="102" width="192" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Camera Test"/>
                                 <connections>
-                                    <action selector="cameraClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ad7-Za-2Rl"/>
+                                    <action selector="cameraClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eii-SU-xaj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snq-OP-SPa">
-                                <rect key="frame" x="212" y="98" width="192" height="31"/>
+                                <rect key="frame" x="212" y="102" width="192" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="GPS"/>
                                 <connections>
-                                    <action selector="gpsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9H-TQ-4RT"/>
+                                    <action selector="gpsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLY-7d-PnC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,17 +75,34 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="TgI-Fr-en6" id="FJf-vK-BES"/>
-                        <outlet property="txtUrl" destination="bL1-bx-TaT" id="Rzb-gz-1yz"/>
-                        <outlet property="webView1" destination="TgI-Fr-en6" id="96P-tX-tPd"/>
+                        <outlet property="containerView" destination="TgI-Fr-en6" id="L11-mG-k7s"/>
+                        <outlet property="txtUrl" destination="bL1-bx-TaT" id="F5V-DK-Psh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="11.594202898550726" y="93.75"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Bn8-V2-Pqa">
+            <objects>
+                <viewController id="zyw-a8-l18" customClass="HomeViewController" customModule="wkwebview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kc3-B6-RWT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xNe-Fy-S4h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCc-nj-e3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-886" y="393"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

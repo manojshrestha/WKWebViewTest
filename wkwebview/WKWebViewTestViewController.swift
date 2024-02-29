@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, UITextFieldDelegate,WKNavigationDelegate{
+class WKWebViewTestViewController: UIViewController, UITextFieldDelegate,WKNavigationDelegate{
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var txtUrl: UITextField!
     @IBOutlet weak var  webView1 : WKWebView!
@@ -44,12 +44,12 @@ class ViewController: UIViewController, UITextFieldDelegate,WKNavigationDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "WKWebView Test"
         let configuration = WKWebViewConfiguration()
         configuration.allowsInlineMediaPlayback = true
         configuration.mediaTypesRequiringUserActionForPlayback = []
                 
-        webView1 = WKWebView(frame: containerView.frame, configuration: configuration)
+        webView1 = WKWebView(frame: CGRectMake(0, 0, 0, 0), configuration: configuration)
         webView1.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(webView1)
         
