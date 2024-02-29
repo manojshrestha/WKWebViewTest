@@ -45,6 +45,7 @@ class WKWebViewTestViewController: UIViewController, UITextFieldDelegate,WKNavig
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "WKWebView Test"
+        self.navigationController?.navigationBar.isHidden = false
         let configuration = WKWebViewConfiguration()
         configuration.allowsInlineMediaPlayback = true
         configuration.mediaTypesRequiringUserActionForPlayback = []

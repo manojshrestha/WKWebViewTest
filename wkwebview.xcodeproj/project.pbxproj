@@ -16,6 +16,8 @@
 		4B0378092B9051C70033D48C /* Lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B0378052B9051C70033D48C /* Lottie1.json */; };
 		4B03780C2B9052210033D48C /* Lottie5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B03780A2B9052210033D48C /* Lottie5.json */; };
 		4B03780D2B9052210033D48C /* Lottie6.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B03780B2B9052210033D48C /* Lottie6.json */; };
+		4B03780F2B9076180033D48C /* LottieURLTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B03780E2B9076180033D48C /* LottieURLTestViewController.swift */; };
+		4B0378112B9077A80033D48C /* LottieURLInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0378102B9077A80033D48C /* LottieURLInputViewController.swift */; };
 		5A9B92E7248A2EB800B88C61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B92E6248A2EB800B88C61 /* AppDelegate.swift */; };
 		5A9B92E9248A2EB800B88C61 /* WKWebViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B92E8248A2EB800B88C61 /* WKWebViewTestViewController.swift */; };
 		5A9B92EC248A2EB800B88C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B92EA248A2EB800B88C61 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		4B0378052B9051C70033D48C /* Lottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lottie1.json; sourceTree = "<group>"; };
 		4B03780A2B9052210033D48C /* Lottie5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lottie5.json; sourceTree = "<group>"; };
 		4B03780B2B9052210033D48C /* Lottie6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Lottie6.json; sourceTree = "<group>"; };
+		4B03780E2B9076180033D48C /* LottieURLTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieURLTestViewController.swift; sourceTree = "<group>"; };
+		4B0378102B9077A80033D48C /* LottieURLInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieURLInputViewController.swift; sourceTree = "<group>"; };
 		5A9B92E3248A2EB800B88C61 /* wkwebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkwebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9B92E6248A2EB800B88C61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A9B92E8248A2EB800B88C61 /* WKWebViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewTestViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				5A9B92F2248A2EBA00B88C61 /* Info.plist */,
 				4B0377EC2B9042D20033D48C /* HomeViewController.swift */,
 				4B0377EE2B9043820033D48C /* LottieTestViewController.swift */,
+				4B03780E2B9076180033D48C /* LottieURLTestViewController.swift */,
+				4B0378102B9077A80033D48C /* LottieURLInputViewController.swift */,
 			);
 			path = wkwebview;
 			sourceTree = "<group>";
@@ -180,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0378112B9077A80033D48C /* LottieURLInputViewController.swift in Sources */,
 				5A9B92E9248A2EB800B88C61 /* WKWebViewTestViewController.swift in Sources */,
 				4B0377EF2B9043820033D48C /* LottieTestViewController.swift in Sources */,
+				4B03780F2B9076180033D48C /* LottieURLTestViewController.swift in Sources */,
 				5A9B92E7248A2EB800B88C61 /* AppDelegate.swift in Sources */,
 				4B0377ED2B9042D20033D48C /* HomeViewController.swift in Sources */,
 			);

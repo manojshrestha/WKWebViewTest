@@ -3,7 +3,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     let tableView = UITableView()
-    let options = ["WKWebView Test", "Lottie Test"]
+    let options = ["WKWebView Test", "Lottie Local Test", "Lottie URL Test"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let lottieTestVC = LottieTestViewController()
             navigationController?.pushViewController(lottieTestVC, animated: true)
+        case 2:
+            let lottieURLTestVC = LottieURLInputViewController()
+            navigationController?.pushViewController(lottieURLTestVC, animated: true)
         default:
             break
         }
